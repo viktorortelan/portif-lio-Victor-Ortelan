@@ -1,0 +1,641 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  background: #020617;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ccc;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+
+
+/* Container da Seção */
+.skills-section {
+    background: #020617;
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.skills-title {
+     color: #e2e8f0;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Grid de Habilidades */
+.skills-grid {
+     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Card Individual */
+.skill-card {
+border: 1px solid #1e293b;
+    border-radius: 8px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.skill-card:hover {
+    background: #0f172a;
+    transform: translateY(-3px);
+}
+
+/* Estilo do Ícone */
+.skill-card img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* Texto da Habilidade */
+.skill-card span {
+    color: #e2e8f0;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+
+/* HOME */
+#home {
+  padding: 80px 0;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-content .text {
+  max-width: 500px;
+}
+
+.home-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  margin-bottom: 20px;
+  color: #aaa;
+}
+
+.btn {
+  background: #22c55e;
+  padding: 10px 20px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.image img {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+}
+
+/* ABOUT */
+#about {
+  padding: 60px 0;
+}
+
+/* PROJECTS */
+#projects {
+  padding: 60px 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project {
+   background: #020617;
+  border: 1px solid #1e293b;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tags span {
+   background: #2563eb;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* Container Principal (Fundo Roxo) */
+.footer-container {
+    background: linear-gradient(90deg, #020617 0%, #1e3a8a 100%);
+    padding: 60px 20px;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+/* Card Branco Central */
+.footer-content {
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 40px; /* Bordas bem arredondadas */
+    padding: 80px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Estilização da Esquerda */
+.footer-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    font-size: 18px;
+    color: #555;
+}
+
+.footer-copyright strong {
+    color: #000;
+}
+
+/* Estilização da Direita (Social) */
+.social-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin-bottom: 12px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #1e293b; /* Cor escura profissional */
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #2563eb; /* Azul ao passar o mouse */
+}
+
+
+.footer-email {
+    margin-top: 5px;
+    color: #64748b;
+    font-size: 16px;
+}
+
+.email-box {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 500px; /* Aumentei para o formulário não ficar "esmagado" */
+}
+
+.email-box label {
+    display: block;
+    color: #334155;
+    font-weight: bold;
+    margin-bottom: 15px; /* Mais espaço para o aviãozinho respirar */
+    font-size: 18px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column; /* Coloquei um sobre o outro para o campo de mensagem ser maior */
+    gap: 12px;
+}
+
+/* Estilo para o campo de texto (ajustado para ser maior) */
+.input-group textarea {
+    padding: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    height: 150px; /* Aqui é onde o tamanho realmente aumenta */
+    resize: none;
+    font-family: inherit;
+}
+
+/* Estilo para o campo de e-mail do remetente */
+.input-group input {
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+}
+
+.input-group button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    align-self: flex-start; /* Botão alinhado à esquerda */
+    min-width: 150px;
+}
+
+.input-group button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px); /* Efeito suave de levante */
+}
+
+/* Ícone do aviãozinho na frase */
+.fa-paper-plane {
+    color: #2563eb;
+    margin-left: 8px;
+}
+
+
+.whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  z-index: 999;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp img {
+  width: 30px;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+nav a {
+  color: #94a3b8;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+.btn {
+  background: #2563eb;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #1e40af;
+}
+
+
+/* MODAL - ESTILO ATUALIZADO (IMAGEM 2) */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85); /* Fundo mais escuro para destaque */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal-content {
+    background: #050a14;
+    border: 1px solid #1e293b;
+    border-radius: 15px;
+    width: 95%; /* Ocupa quase toda a largura em telas menores */
+    max-width: 1100px; /* Aumentado de 900px para 1100px */
+    position: relative;
+    padding: 50px; /* Aumentado para dar mais respiro */
+}
+
+.modal-body {
+    display: flex;
+    gap: 40px; /* Espaço maior entre a imagem e o texto */
+    align-items: flex-start; /* Alinha pelo topo para textos longos não centralizarem sozinhos */
+}
+
+/* Fechar (X) */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close:hover {
+    color: #2563eb;
+}
+
+/* Lado Esquerdo - Imagem */
+.modal-left {
+    flex: 1.2; /* Aumenta um pouco a proporção da imagem */
+    border: 2px solid #2563eb;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    min-height: 400px; /* Aumentado de 300px para 400px para fotos maiores */
+    background: #020617;
+}
+
+.modal-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+    display: block;    /* Remove espaços extras abaixo da imagem */
+}
+
+/* Lado Direito - Texto e Botões */
+.modal-right {
+    flex: 1; /* O texto agora ocupa um espaço proporcional menor que a imagem */
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-right h2 {
+    font-size: 32px; 
+    margin-bottom: 20px;
+}
+
+.modal-right p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cbd5e1; /* Texto cinza claro para leitura */
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+/* Tags de Tecnologias */
+.modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.modal-tags span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid #334155;
+    padding: 6px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.modal-tags img {
+    width: 18px;
+    height: 18px;
+}
+
+/* Botão Visitar */
+.modal-btn {
+    background: #2563eb;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.modal-btn:hover {
+    background: #1d4ed8;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    .modal-body {
+        flex-direction: column;
+    }
+    .modal-content {
+        padding: 20px;
+        margin-top: 50px;
+    }
+}
+.close {
+  float: right;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+
+
+/* --- RESPONSIVIDADE (CELULAR E TABLET) --- */
+
+@media (max-width: 768px) {
+    /* Ajustes Gerais */
+    .container {
+        width: 95%;
+    }
+
+    /* HEADER: Menu empilhado ou centralizado */
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    /* HOME: Foto em cima, texto embaixo */
+    .home-content {
+        flex-direction: column-reverse; /* Foto aparece primeiro no celular */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .home-content .text {
+        max-width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 30px;
+    }
+
+    .image img {
+        width: 250px; /* Reduz o tamanho da foto no celular */
+        height: 250px;
+    }
+
+    /* SKILLS: Garante que os cards não quebrem o layout */
+    .skills-grid {
+        justify-content: center;
+    }
+
+    .skill-card {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    /* FOOTER: A parte mais crítica */
+    .footer-container {
+        padding: 20px 10px;
+    }
+
+    .footer-content {
+        flex-direction: column; /* Empilha o conteúdo do card branco */
+        padding: 40px 20px;
+        border-radius: 20px;
+        gap: 40px;
+    }
+
+    .footer-left, .footer-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-links a {
+        justify-content: center; /* Centraliza ícones sociais */
+    }
+
+    .email-box {
+        max-width: 100%;
+    }
+
+    .input-group button {
+        align-self: center; /* Centraliza o botão de enviar no celular */
+        width: 100%;
+    }
+
+    /* MODAL: Ajustes de respiro */
+    .modal-content {
+        padding: 30px 20px;
+        max-height: 90vh;
+        overflow-y: auto; /* Permite scroll se o texto do projeto for longo */
+    }
+
+    .modal-body {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .modal-left {
+        min-height: 200px;
+    }
+
+    .modal-right h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .modal-tags {
+        justify-content: center;
+    }
+
+    /* WHATSAPP: Diminuir um pouco para não cobrir conteúdo */
+    .whatsapp {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+/* Ajuste extra para telas muito pequenas (iPhone SE, etc) */
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 26px;
+    }
+    
+    .footer-name {
+        font-size: 20px;
+    }
+}
