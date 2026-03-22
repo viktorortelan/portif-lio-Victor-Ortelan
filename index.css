@@ -173,6 +173,48 @@ border: 1px solid #1e293b;
   border-radius: 10px;
 }
 
+
+.section-title, #about h2, #projects h2 {
+    font-size: 32px;
+    margin-bottom: 40px; /* Aumenta o espaço entre o título e o conteúdo/cards */
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #e2e8f0;
+}
+
+/* Ajuste específico para o Sobre Mim */
+#about {
+    padding: 100px 0; /* Aumenta o espaço em volta da seção inteira */
+}
+
+#about p {
+    font-size: 18px; /* Texto maior para melhor leitura */
+    line-height: 1.8; /* Aumenta o espaço entre as linhas */
+    margin-bottom: 20px;
+    color: #cbd5e1;
+    max-width: 800px; /* Evita que o texto fique largo demais e canse a vista */
+}
+
+/* Espaçamento do Grid de Projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Aumenta o espaço entre um card e outro */
+    margin-top: 20px;
+}
+
+/* Ajuste interno dos cards para não colarem no texto */
+.project h3 {
+    margin: 15px 0 10px 0;
+}
+
+.project p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+
+
 .tags {
   margin-top: 10px;
 }
